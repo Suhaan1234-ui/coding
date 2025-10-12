@@ -3,7 +3,7 @@ using namespace std;
 
 void inputarr(int array[], int size) {
     for (int i = 0; i < size; i++) {
-        cout << "Enter the " << i << "th element of the array: ";
+        cout << "Enter the4 " << i << "th element of the array: ";
         cin >> array[i];
     }
 }
