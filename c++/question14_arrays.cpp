@@ -1,37 +1,40 @@
-
-
 #include <iostream>
-
+#include <climits>
 using namespace std;
 
-void inputarray(int name[], int size)
-{
+void inputarr(int arr[], int size) {
     for (int i = 0; i < size; i++)
-    {
-        cout << "Enter the " << i << "th number of the array: ";
-        cin >> name[i];
-    }
+        cin >> arr[i];
 }
 
-int main()
-{
-    cout << "Enter the size: ";
-    int a;
-    cin >> a;
-
-    int j[a];
-    inputarray(j, a);
-
-    int b = j[0];
-    for (int i = 1; i < a; i++)
-    {
-        if (j[i] > b)
-        {
-            b = j[i];
-        }
+int max(int arr[], int size) {
+    int a = INT_MIN;
+    for (int i = 0; i < size; i++) {
+        if (arr[i] > a)  // Removed extra semicolon here
+            a = arr[i];
     }
+    return a;
+}
 
-    cout << "Biggest number in the array is: " << b << endl;
+int min(int arr[], int size) {
+    int a = INT_MAX;  // Replaced ':' with ';'
+    for (int i = 0; i < size; i++) {
+        if (arr[i] < a)
+            a = arr[i];
+    }
+    return a;
+}
+
+int main() {
+    int arr[10000];
+    cout << "Enter the size of the array: ";
+    int size;
+    cin >> size;
+
+    inputarr(arr, size);
+
+    cout << "The biggest term is: " << max(arr, size) << endl;
+    cout << "The smallest term is: " << min(arr, size) << endl;
 
     return 0;
 }
