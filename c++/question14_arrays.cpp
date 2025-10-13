@@ -10,14 +10,14 @@ void inputarr(int arr[], int size) {
 int max(int arr[], int size) {
     int a = INT_MIN;
     for (int i = 0; i < size; i++) {
-        if (arr[i] > a)  // Removed extra semicolon here
+        if (arr[i] > a)  
             a = arr[i];
     }
     return a;
 }
 
 int min(int arr[], int size) {
-    int a = INT_MAX;  // Replaced ':' with ';'
+    int a = INT_MAX;  
     for (int i = 0; i < size; i++) {
         if (arr[i] < a)
             a = arr[i];
