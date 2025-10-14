@@ -1,5 +1,5 @@
 #include <iostream>
-#include <algorithm>
+#include <algorithm> //to use swap function
 using namespace std;
 
 void alternate(int arr[], int size) {

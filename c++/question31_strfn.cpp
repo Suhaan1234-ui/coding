@@ -1,6 +1,6 @@
 #include <iostream>
 #include <algorithm>
-#include "question30_strfn.cpp"
+#include "question30_strfn.cpp" // Include the header file for finlen function
 using namespace std;
 extern int finlen( char str[]);
 bool ispal(char a[]){
