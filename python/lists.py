@@ -7,3 +7,9 @@ list1.pop(2)#removes element at index 2 and returns its value
 print(list1)
 print(list1.pop(2))
 print(list1.pop())#removes last element and returns its value
+#we can alsoe make nested lists
+list2=[1,2,[3,4,5],6]
+print(list2)
+print(list2[2][1])#accessing nested list element    
+list2[2][1]=100#modifying nested list element
+print(list2)    
