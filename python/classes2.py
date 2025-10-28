@@ -7,7 +7,6 @@ class form:
             self.age=age
     def intro(self):
          print("aadja;lj")
-        
     
     @staticmethod  
     def greet():
