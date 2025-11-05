@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//inititalizing a pointer is bad practrice instead use null pointer
 void addressarr(int array[], int size) {
     int *ptr=array;
     for(int j = 0; j < size; j++) {
