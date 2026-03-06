@@ -3,7 +3,7 @@ def greatest(a, b, c):
         return a
     elif(b>a and b>c):
         return b
-    elif(c>b and c>a):
+    else:
         return c
 
 a = 1
