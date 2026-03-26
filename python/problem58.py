@@ -17,3 +17,4 @@ a = Employee(2000, 12)
 print(a.newsalary)   # getter runs here
 a.newsalary = 5000   # setter runs here
 print(a.increment)
+3
