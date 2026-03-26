@@ -1,0 +1,8 @@
+#filterling = refers to the process of selecting specific elements from an array based on certain conditions or filtering out elemnts that dont match a condition. It allows you to create a new array that contains only the elements that meet the specified criteria. This is often done using boolean indexing, where you create a boolean array that indicates which elements of the original array satisfy the condition, and then use this boolean array to filter the original array.
+import numpy as np
+myarr=np.array([[1,2,3],[4,5,6],[7,8,9],[10,11,12]])
+print(myarr[myarr>5]) # this will create a an array of all elemts greater than 5 and return a 1d array, the original array is 2d but the filtered array is 1d because we are only selecting the elements that satisfy the condition and not the structure of the original array.\
+print (myarr[(myarr>6) & (myarr<10)]) # we will not use "and" , as numpy use c style arrays
+# to presreve the shape we use np.where(condition, array , replacement) function
+filtered_arr=np.where(myarr>5, myarr, 0) # this will create a new array where the elements that are greater than 5 are kept as they are, and the elements that are not greater than 5 are replaced with 0. The first argument of np.where() is the condition, the second argument is the value to be used for elements that satisfy the condition, and the third argument is the value to be used for elements that do not satisfy the condition.
+print(filtered_arr)
