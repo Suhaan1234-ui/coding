@@ -1,0 +1,8 @@
+import matplotlib.pyplot as plt
+import numpy as np
+#grid() helps to add a grid to the plot, making it easier to read and interpret the data. The grid function can be customized with various parameters to control the appearance of the grid lines, such as their color, style, and width. By adding a grid to the plot, we can enhance the visual clarity and make it easier to identify trends and patterns in the data.
+x=np.array([1,2,3,4,5])
+y1=np.array([2,3,5,7,11])
+plt.grid(axis="both",color="purple",linestyle="dashed",linewidth=2) # this will add a grid to the plot on both the x and y axes. The grid function is used to add a grid to the plot, and it can be customized with various parameters. In this case, we are specifying that the grid should be added to both axes (axis="both"), with a color of purple, a dashed linestyle, and a linewidth of 2. This will create a visually distinct grid that can help improve the readability of the plot.
+plt.plot(x,y1,marker="o",markersize=10,markerfacecolor="red",markeredgecolor="blue",markeredgewidth=2,linestyle="dashed",linewidth=2,color="blue") # this will create a line plot of the data points defined by the x and y1 arrays, with customized markers and line style. The plot function takes the x and y values as arguments and creates a line plot connecting the points defined by those values. In this case, we are also specifying additional parameters to customize the appearance of the plot. We are setting the marker to "o" (circle), the marker size to 10, the marker face color to red, the marker edge color to blue, the marker edge width to 2, the line style to dashed, the line width to 2, and the line color to blue. This will create a visually distinct line plot with customized markers and grid lines.
+plt.show()

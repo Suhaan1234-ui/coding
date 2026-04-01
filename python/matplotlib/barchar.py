@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+import numpy as np
+#barcharts are a type of plot that is used to represent categorical data with rectangular bars. The length of each bar is proportional to the value it represents, making it easy to compare different categories visually. Bar charts can be displayed either vertically or horizontally, and they are commonly used to show the distribution of data across different categories or to compare the values of different groups. By using bar charts, we can effectively communicate information about the relative sizes of different categories and identify trends or patterns in the data.
+chartsyle={
+    "color":"purple",   "width":0.5,   "edgecolor":"blue",   "linewidth":2}
+x=np.array(["carbs","protein","fats", "vitamins","minerals", "sugars"])
+y=np.array([50,20,10,5,5,10])
+plt.bar(x,y,**chartsyle) # this will create a bar chart with the specified x and y values, and the styling options defined in the chartsyle dictionary. The bar function is used to create a bar chart, where the x values represent the categories (in this case, "carbs", "protein", "fats", "vitamins", "minerals", "sugars") and the y values represent the corresponding values for each category. By unpacking the chartsyle dictionary using **chartsyle, we are applying the specified styling options to the bars in the chart, such as color, width, edge color, and line width.
+#plt.barh(x,y,**chartsyle) # this will create a horizontal bar chart with the specified x and y values, and the styling options defined in the chartsyle dictionary. The barh function is used to create a horizontal bar chart, where the x values represent the categories (in this case, "carbs", "protein", "fats", "vitamins", "minerals", "sugars") and the y values represent the corresponding values for each category. By unpacking the chartsyle dictionary using **chartsyle, we are applying the specified styling options to the bars in the chart, such as color, width, edge color, and line width
+plt.xlabel("Nutrients")
+plt.ylabel("Percentage")
+plt.title("Nutrient Composition of Food",fontsize=20,family="serif",color="purple",fontweight="bold")
+plt.xticks(rotation=45) # this will rotate the x-axis tick labels by 45 degrees. The xticks function is used to specify the locations and labels of the ticks on the x-axis. By passing the rotation parameter with a value of 45, we are rotating the tick labels by 45 degrees, which can help improve readability when the labels are long or overlapping.
+plt.yticks(np.arange(0, 101, 10)) # this will set the y-axis ticks to be at intervals of 10, starting from 0 and ending at 100. The yticks function is used to specify the locations and labels of the ticks on the y-axis. By passing np.arange(0, 101, 10) as an argument, we are creating an array of values from 0 to 100 with a step of 10, which will be used as the tick locations on the y-axis. This will help improve readability and make it easier to interpret the values on the y-axis.
+plt.show()
