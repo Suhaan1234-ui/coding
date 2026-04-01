@@ -1,0 +1,64 @@
+CSV (Comma-Separated Values) and JSON (JavaScript Object Notation) are two widely used formats for storing and exchanging data. 
+CSV is best for tabular data like spreadsheets, while JSON is ideal for structured data with nested relationships,
+ especially in web applications.
+ example of csv:
+ name,email,age,city
+John Doe,john@example.com,28,New York
+Jane Smith,jane@example.com,34,Los Angeles
+example of json:
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "age": 28,
+  "city": "New York"
+}
+
+
+rest api:A REST API (Representational State Transfer API) is a way for applications to communicate with each other over the web using standard HTTP methods 
+like GET, POST, PUT, and DELETE. It’s the backbone of modern apps—your phone’s food delivery, payment gateways, and even train 
+booking systems rely on REST APIs to send and receive data. 
+Here are categories and examples of REST APIs that are commonly used:
+
+📊 Data & Testing
+JSONPlaceholder → Fake online REST API for testing and prototyping.
+
+Random User API → Generates random user data (names, emails, addresses).
+
+Agify API → Predicts age based on a name.
+
+🌦️ Weather & Location
+Open-Meteo Weather API → Free weather forecasts.
+
+IP-API → Geolocation based on IP address.
+
+Google Maps API → Location search, directions, and geocoding.
+
+💰 Finance & Crypto
+CoinGecko API → Cryptocurrency prices, market data, and charts.
+
+PayPal REST API → Payment processing and transactions.
+
+Stripe API → Online payments and subscriptions.
+
+📱 Social Media & Communication
+Twitter API → Fetch tweets, user data, and trends.
+
+Instagram Graph API → Access posts, stories, and analytics.
+
+Slack API → Automate messaging and integrations.
+
+Discord API → Manage servers, bots, and messages.
+
+🛠️ Developer Tools
+GitHub API → Repositories, commits, issues, and pull requests.
+
+YouTube Data API → Video search, analytics, and channel info.
+
+ChatGPT API (OpenAI) → Natural language processing and AI responses.
+
+🐾 Fun & Miscellaneous
+PokeAPI → Pokémon data for games and apps.
+
+Cat Facts API → Random cat trivia.
+
+Dog API → Images and facts about dogs.
